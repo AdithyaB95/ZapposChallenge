@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInput"
+        android:layout_alignEnd="@+id/progress_bar"
+        android:paddingBottom="15dp"
+        android:paddingRight="8dp"
+        android:hint="Enter product"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:id="@+id/go"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/recycler_view" />
+
+
+
+    <view
+        android:id="@+id/recycler_view"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/userInput"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
